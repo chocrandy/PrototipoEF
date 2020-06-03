@@ -51,8 +51,6 @@ C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Exa
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\ExamenFinal\ExamenFinal\obj\Debug\LabNominas.pdb
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\ExamenFinal.csprojAssemblyReference.cache
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.MDI_nomina.resources
-C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.transEncab.resources
-C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.nominaEncab.resources
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\LabNominas.Properties.Resources.resources
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\ExamenFinal.csproj.GenerateResource.cache
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\ExamenFinal.csproj.CoreCompileInputs.cache
@@ -103,3 +101,8 @@ C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Exa
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.mantenimiento_marcas.resources
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.mantenimiento_productos.resources
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.mantenimiento_proveedores.resources
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.movimientos_bancarios_2.resources
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.renta_encab.resources
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.mov_inv.resources
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.mantenimiento_ordenCompra.resources
+C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\3er Parcial\Examen\PrototipoEF\ExamenFinal\ExamenFinal\obj\Debug\CapaVistaFRM.mov_invDetalle.resources

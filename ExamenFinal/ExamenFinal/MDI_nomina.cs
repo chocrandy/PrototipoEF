@@ -22,8 +22,8 @@ namespace CapaVistaFRM
         private mantenimiento_marcas frm_mantenimiento_marcas;
         private mantenimiento_productos frm_mantenimiento_productos;
         private mantenimiento_proveedores frm_mantenimiento_proveedores;
-        private nominaEncab frm_nominaEncab;
-        private transEncab frm_transEncab; 
+        private mantenimiento_ordenCompra frm_mantenimiento_ordenCompra;
+        private mov_inv frm_mov_inv;
 
         //sentencia sn = new sentencia();
         String usuarioActivo = "rchocm";
@@ -39,7 +39,9 @@ namespace CapaVistaFRM
         
         private void frm_mantenimiento_bodegas_FormClosed(Object sender, FormClosedEventArgs e)
         { frm_mantenimiento_bodegas = null; }
-        //mantenimiento_proveedores
+        private void frm_mantenimiento_ordenCompra_FormClosed(Object sender, FormClosedEventArgs e)
+        { frm_mantenimiento_ordenCompra = null; }
+        //mantenimiento_ordenCompra
         private void frm_mantenimiento_vendedores_FormClosed(Object sender, FormClosedEventArgs e)
         { frm_mantenimiento_vendedores = null; }
         private void frm_mantenimiento_clientes_FormClosed(Object sender, FormClosedEventArgs e)
@@ -52,10 +54,8 @@ namespace CapaVistaFRM
         { frm_mantenimiento_productos = null; }
         private void frm_mantenimiento_proveedores_FormClosed(Object sender, FormClosedEventArgs e)
         { frm_mantenimiento_proveedores = null; }
-        private void frm_nominaEncab_FormClosed(Object sender, FormClosedEventArgs e)
-        { frm_nominaEncab = null; }
-        private void frm_transEncab_FormClosed(Object sender, FormClosedEventArgs e)
-        { frm_transEncab = null; }     
+        private void frm_mov_inv_FormClosed(Object sender, FormClosedEventArgs e)
+        { frm_mov_inv = null; }
 
         //====================Funciones de declaración de Eventos====================
 
@@ -95,12 +95,10 @@ namespace CapaVistaFRM
         }
         
         private void MDI_FRM_Load(object sender, EventArgs e)
-        {
-            /*
+        {           
             frm_login login = new frm_login();
             login.ShowDialog();
-            Lbl_usuario.Text = login.obtenerNombreUsuario(); */
-            Lbl_usuario.Text = "rchocm";
+            Lbl_usuario.Text = login.obtenerNombreUsuario();            
             usuarioActivo = Lbl_usuario.Text;            
         } 
 
@@ -372,6 +370,40 @@ namespace CapaVistaFRM
             else
             {
                 frm_mantenimiento_proveedores.Activate();
+            }
+        }
+
+        private void MovimientosDeInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //MOVIMIENTOS DE INVENTARIO ENCABEZADO
+            //mov_inv
+            if (frm_mov_inv == null)
+            {
+                frm_mov_inv = new mov_inv();
+                frm_mov_inv.MdiParent = this;
+                frm_mov_inv.FormClosed += new FormClosedEventHandler(frm_mov_inv_FormClosed);
+                frm_mov_inv.Show();
+            }
+            else
+            {
+                frm_mov_inv.Activate();
+            }
+        }
+
+        private void ComprasEncabezadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //COMPRAS ENCABEZADO
+            //mantenimiento_ordenCompra
+            if (frm_mantenimiento_ordenCompra == null)
+            {
+                frm_mantenimiento_ordenCompra = new mantenimiento_ordenCompra(usuarioActivo);
+                frm_mantenimiento_ordenCompra.MdiParent = this;
+                frm_mantenimiento_ordenCompra.FormClosed += new FormClosedEventHandler(frm_mantenimiento_ordenCompra_FormClosed);
+                frm_mantenimiento_ordenCompra.Show();
+            }
+            else
+            {
+                frm_mantenimiento_ordenCompra.Activate();
             }
         }
     }
