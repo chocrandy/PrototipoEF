@@ -62,6 +62,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="mantenimiento_ordenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_ordenCompra.Designer.cs">
+      <DependentUpon>mantenimiento_ordenCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantenimiento_productos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,20 +116,35 @@
     <Compile Include="MDI_nomina.Designer.cs">
       <DependentUpon>MDI_nomina.cs</DependentUpon>
     </Compile>
-    <Compile Include="transEncab.cs">
+    <Compile Include="movimientos_bancarios_2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="transEncab.Designer.cs">
-      <DependentUpon>transEncab.cs</DependentUpon>
+    <Compile Include="movimientos_bancarios_2.Designer.cs">
+      <DependentUpon>movimientos_bancarios_2.cs</DependentUpon>
     </Compile>
-    <Compile Include="nominaEncab.cs">
+    <Compile Include="mov_invDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="nominaEncab.Designer.cs">
-      <DependentUpon>nominaEncab.cs</DependentUpon>
+    <Compile Include="mov_invDetalle.Designer.cs">
+      <DependentUpon>mov_invDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mov_inv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mov_inv.Designer.cs">
+      <DependentUpon>mov_inv.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="renta_encab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="renta_encab.Designer.cs">
+      <DependentUpon>renta_encab.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="mantenimiento_ordenCompra.resx">
+      <DependentUpon>mantenimiento_ordenCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mantenimiento_productos.resx">
       <DependentUpon>mantenimiento_productos.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,11 +169,14 @@
     <EmbeddedResource Include="MDI_nomina.resx">
       <DependentUpon>MDI_nomina.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="transEncab.resx">
-      <DependentUpon>transEncab.cs</DependentUpon>
+    <EmbeddedResource Include="movimientos_bancarios_2.resx">
+      <DependentUpon>movimientos_bancarios_2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nominaEncab.resx">
-      <DependentUpon>nominaEncab.cs</DependentUpon>
+    <EmbeddedResource Include="mov_invDetalle.resx">
+      <DependentUpon>mov_invDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mov_inv.resx">
+      <DependentUpon>mov_inv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -163,6 +187,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="renta_encab.resx">
+      <DependentUpon>renta_encab.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
