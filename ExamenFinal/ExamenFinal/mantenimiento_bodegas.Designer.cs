@@ -1,6 +1,6 @@
 ﻿namespace CapaVistaFRM
 {
-    partial class mantenimiento_empleado
+    partial class mantenimiento_bodegas
     {
         /// <summary>
         /// Required designer variable.
@@ -53,7 +53,7 @@
             this.panel1.Size = new System.Drawing.Size(840, 83);
             this.panel1.TabIndex = 1;
             // 
-            // mantenimiento_empleado
+            // mantenimiento_bodegas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
@@ -63,9 +63,9 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "mantenimiento_empleado";
+            this.Name = "mantenimiento_bodegas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EMPLEADO";
+            this.Text = "BODEGAS";
             this.ResumeLayout(false);
             this.PerformLayout();
 

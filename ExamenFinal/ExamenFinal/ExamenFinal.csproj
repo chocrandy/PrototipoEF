@@ -62,11 +62,47 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="mantenimiento_empleado.cs">
+    <Compile Include="mantenimiento_productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mantenimiento_empleado.Designer.cs">
-      <DependentUpon>mantenimiento_empleado.cs</DependentUpon>
+    <Compile Include="mantenimiento_productos.Designer.cs">
+      <DependentUpon>mantenimiento_productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_marcas.Designer.cs">
+      <DependentUpon>mantenimiento_marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_lineas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_lineas.Designer.cs">
+      <DependentUpon>mantenimiento_lineas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_proveedores.Designer.cs">
+      <DependentUpon>mantenimiento_proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_vendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_vendedores.Designer.cs">
+      <DependentUpon>mantenimiento_vendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_clientes.Designer.cs">
+      <DependentUpon>mantenimiento_clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento_bodegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento_bodegas.Designer.cs">
+      <DependentUpon>mantenimiento_bodegas.cs</DependentUpon>
     </Compile>
     <Compile Include="MDI_nomina.cs">
       <SubType>Form</SubType>
@@ -88,8 +124,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="mantenimiento_empleado.resx">
-      <DependentUpon>mantenimiento_empleado.cs</DependentUpon>
+    <EmbeddedResource Include="mantenimiento_productos.resx">
+      <DependentUpon>mantenimiento_productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_marcas.resx">
+      <DependentUpon>mantenimiento_marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_lineas.resx">
+      <DependentUpon>mantenimiento_lineas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_proveedores.resx">
+      <DependentUpon>mantenimiento_proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_vendedores.resx">
+      <DependentUpon>mantenimiento_vendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_clientes.resx">
+      <DependentUpon>mantenimiento_clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento_bodegas.resx">
+      <DependentUpon>mantenimiento_bodegas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI_nomina.resx">
       <DependentUpon>MDI_nomina.cs</DependentUpon>

@@ -15,13 +15,15 @@ namespace CapaVistaFRM
     public partial class MDI_nomina : Form
     {
         //mantenimiento_concepto
-        /*/
-        private mantenimiento_concepto frm_mantenimiento_concepto;
-        private mantenimiento_departamento frm_mantenimiento_departamento;
-        private mantenimiento_empleado frm_mantenimiento_empleado;
-        private mantenimiento_puesto frm_mantenimiento_puesto;
+        private mantenimiento_bodegas frm_mantenimiento_bodegas;           
+        private mantenimiento_vendedores frm_mantenimiento_vendedores;
+        private mantenimiento_clientes frm_mantenimiento_clientes;
+        private mantenimiento_lineas frm_mantenimiento_lineas;
+        private mantenimiento_marcas frm_mantenimiento_marcas;
+        private mantenimiento_productos frm_mantenimiento_productos;
+        private mantenimiento_proveedores frm_mantenimiento_proveedores;
         private nominaEncab frm_nominaEncab;
-        private transEncab frm_transEncab; /*/
+        private transEncab frm_transEncab; 
 
         //sentencia sn = new sentencia();
         String usuarioActivo = "rchocm";
@@ -34,19 +36,26 @@ namespace CapaVistaFRM
         }
 
         //==========Funciones para evitar que se habrá 2 veces la misma ventana==========          
-        /*/
-        private void frm_mantenimiento_concepto_FormClosed(Object sender, FormClosedEventArgs e)
-        { frm_mantenimiento_concepto = null; }
-        private void frm_mantenimiento_departamento_FormClosed(Object sender, FormClosedEventArgs e)
-        { frm_mantenimiento_departamento = null; }
-        private void frm_mantenimiento_empleado_FormClosed(Object sender, FormClosedEventArgs e)
-        { frm_mantenimiento_empleado = null; }
-        private void frm_mantenimiento_puesto_FormClosed(Object sender, FormClosedEventArgs e)
-        { frm_mantenimiento_puesto = null; }
+        
+        private void frm_mantenimiento_bodegas_FormClosed(Object sender, FormClosedEventArgs e)
+        { frm_mantenimiento_bodegas = null; }
+        //mantenimiento_proveedores
+        private void frm_mantenimiento_vendedores_FormClosed(Object sender, FormClosedEventArgs e)
+        { frm_mantenimiento_vendedores = null; }
+        private void frm_mantenimiento_clientes_FormClosed(Object sender, FormClosedEventArgs e)
+        { frm_mantenimiento_clientes = null; }
+        private void frm_mantenimiento_lineas_FormClosed(Object sender, FormClosedEventArgs e)
+        { frm_mantenimiento_lineas = null; }
+        private void frm_mantenimiento_marcas_FormClosed(Object sender, FormClosedEventArgs e)
+        { frm_mantenimiento_marcas = null; }
+        private void frm_mantenimiento_productos_FormClosed(Object sender, FormClosedEventArgs e)
+        { frm_mantenimiento_productos = null; }
+        private void frm_mantenimiento_proveedores_FormClosed(Object sender, FormClosedEventArgs e)
+        { frm_mantenimiento_proveedores = null; }
         private void frm_nominaEncab_FormClosed(Object sender, FormClosedEventArgs e)
         { frm_nominaEncab = null; }
         private void frm_transEncab_FormClosed(Object sender, FormClosedEventArgs e)
-        { frm_transEncab = null; }         /*/
+        { frm_transEncab = null; }     
 
         //====================Funciones de declaración de Eventos====================
 
@@ -86,11 +95,13 @@ namespace CapaVistaFRM
         }
         
         private void MDI_FRM_Load(object sender, EventArgs e)
-        {                        
+        {
+            /*
             frm_login login = new frm_login();
             login.ShowDialog();
-            Lbl_usuario.Text = login.obtenerNombreUsuario();
-            usuarioActivo = Lbl_usuario.Text; 
+            Lbl_usuario.Text = login.obtenerNombreUsuario(); */
+            Lbl_usuario.Text = "rchocm";
+            usuarioActivo = Lbl_usuario.Text;            
         } 
 
         private void SeguridadToolStripMenuItem_Click(object sender, EventArgs e)
@@ -196,19 +207,7 @@ namespace CapaVistaFRM
 
         private void EmpleadoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            //EMPLEADO     
-            /*/
-            if (frm_mantenimiento_empleado == null)
-            {
-                frm_mantenimiento_empleado = new mantenimiento_empleado(usuarioActivo);
-                frm_mantenimiento_empleado.MdiParent = this;
-                frm_mantenimiento_empleado.FormClosed += new FormClosedEventHandler(frm_mantenimiento_empleado_FormClosed);
-                frm_mantenimiento_empleado.Show();
-            }
-            else
-            {
-                frm_mantenimiento_empleado.Activate();
-            } /*/
+            
         }
 
         private void PuestoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -256,6 +255,124 @@ namespace CapaVistaFRM
             MDI_Seguridad seguridad = new MDI_Seguridad(Lbl_usuario.Text);
             seguridad.lbl_nombreUsuario.Text = Lbl_usuario.Text;
             seguridad.ShowDialog();
+        }
+
+        private void BodegasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //BODEGAS            
+            if (frm_mantenimiento_bodegas == null)
+            {
+                frm_mantenimiento_bodegas = new mantenimiento_bodegas(usuarioActivo);
+                frm_mantenimiento_bodegas.MdiParent = this;
+                frm_mantenimiento_bodegas.FormClosed += new FormClosedEventHandler(frm_mantenimiento_bodegas_FormClosed);
+                frm_mantenimiento_bodegas.Show();
+            }
+            else
+            {
+                frm_mantenimiento_bodegas.Activate();
+            }
+        }
+
+        private void VendedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //VENDEDORES
+            //mantenimiento_vendedores
+            if (frm_mantenimiento_vendedores == null)
+            {
+                frm_mantenimiento_vendedores = new mantenimiento_vendedores(usuarioActivo);
+                frm_mantenimiento_vendedores.MdiParent = this;
+                frm_mantenimiento_vendedores.FormClosed += new FormClosedEventHandler(frm_mantenimiento_vendedores_FormClosed);
+                frm_mantenimiento_vendedores.Show();
+            }
+            else
+            {
+                frm_mantenimiento_vendedores.Activate();
+            }
+        }
+
+        private void ClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //CLIENTES
+            //mantenimiento_clientes
+            if (frm_mantenimiento_clientes == null)
+            {
+                frm_mantenimiento_clientes = new mantenimiento_clientes(usuarioActivo);
+                frm_mantenimiento_clientes.MdiParent = this;
+                frm_mantenimiento_clientes.FormClosed += new FormClosedEventHandler(frm_mantenimiento_clientes_FormClosed);
+                frm_mantenimiento_clientes.Show();
+            }
+            else
+            {
+                frm_mantenimiento_clientes.Activate();
+            }
+        }
+
+        private void LineasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //LINEAS
+            //mantenimiento_lineas
+            if (frm_mantenimiento_lineas == null)
+            {
+                frm_mantenimiento_lineas = new mantenimiento_lineas(usuarioActivo);
+                frm_mantenimiento_lineas.MdiParent = this;
+                frm_mantenimiento_lineas.FormClosed += new FormClosedEventHandler(frm_mantenimiento_lineas_FormClosed);
+                frm_mantenimiento_lineas.Show();
+            }
+            else
+            {
+                frm_mantenimiento_lineas.Activate();
+            }
+        }
+
+        private void MarcasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //MARCAS
+            //mantenimiento_marcas
+            if (frm_mantenimiento_marcas == null)
+            {
+                frm_mantenimiento_marcas = new mantenimiento_marcas(usuarioActivo);
+                frm_mantenimiento_marcas.MdiParent = this;
+                frm_mantenimiento_marcas.FormClosed += new FormClosedEventHandler(frm_mantenimiento_marcas_FormClosed);
+                frm_mantenimiento_marcas.Show();
+            }
+            else
+            {
+                frm_mantenimiento_marcas.Activate();
+            }
+        }
+
+        private void ProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //PRODUCTOS
+            //mantenimiento_productos
+            if (frm_mantenimiento_productos == null)
+            {
+                frm_mantenimiento_productos = new mantenimiento_productos(usuarioActivo);
+                frm_mantenimiento_productos.MdiParent = this;
+                frm_mantenimiento_productos.FormClosed += new FormClosedEventHandler(frm_mantenimiento_productos_FormClosed);
+                frm_mantenimiento_productos.Show();
+            }
+            else
+            {
+                frm_mantenimiento_productos.Activate();
+            }
+        }
+
+        private void ProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //PROVEEDORES
+            //mantenimiento_proveedores
+            if (frm_mantenimiento_proveedores == null)
+            {
+                frm_mantenimiento_proveedores = new mantenimiento_proveedores(usuarioActivo);
+                frm_mantenimiento_proveedores.MdiParent = this;
+                frm_mantenimiento_proveedores.FormClosed += new FormClosedEventHandler(frm_mantenimiento_proveedores_FormClosed);
+                frm_mantenimiento_proveedores.Show();
+            }
+            else
+            {
+                frm_mantenimiento_proveedores.Activate();
+            }
         }
     }
 }
